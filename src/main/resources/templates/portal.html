@@ -37,19 +37,19 @@
 </div>
 <script th:inline="javascript">
     function toggleEditMode(button) {
-        var card = button.closest(".card");
-        var viewMode = card.querySelector(".left");
-        var editMode = card.querySelector(".edit-mode");
-        var rightButtons = card.querySelector(".right");
+        const card = button.closest(".card");
+        const viewMode = card.querySelector(".left");
+        const editMode = card.querySelector(".edit-mode");
+        const rightButtons = card.querySelector(".right");
 
         if (editMode.style.display === "none") {
             viewMode.style.display = "none";
             editMode.style.display = "block";
-            rightButtons.style.visibility = "hidden"; // Hide buttons in edit mode
+            rightButtons.style.visibility = "hidden";
         } else {
             viewMode.style.display = "block";
             editMode.style.display = "none";
-            rightButtons.style.visibility = "visible"; // Show buttons in view mode
+            rightButtons.style.visibility = "visible";
         }
     }
 </script>
