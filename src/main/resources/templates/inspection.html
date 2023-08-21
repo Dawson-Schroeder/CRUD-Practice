@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" th:href="@{site.css}"/>
+</head>
+<body>
+<div class="card">
+    <div class="row" th:text="${employee.firstName}"></div>
+    <div class="row" th:text="${employee.lastName}"></div>
+    <div class="row" th:text="${employee.email}"></div>
+    <div class="row" th:text="${employee.department}"></div>
+</div>
+</body>
+</html>

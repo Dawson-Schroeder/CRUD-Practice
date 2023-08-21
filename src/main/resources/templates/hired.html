@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>New Employee</title>
+    <link rel="stylesheet" th:href="@{site.css}"/>
+</head>
+<body>
+<form method="post" action="/employee/create">
+    <input type="email" id="email" name="email" placeholder="Email:" required><br>
+    <input type="text" id="firstName" name="firstName" placeholder="First Name:" required><br>
+    <input type="text" id="lastName" name="lastName" placeholder="Last Name:" required><br>
+    <input type="text" id="department" name="department" placeholder="Department:"><br>
+    <button type="submit">Create Employee</button>
+</form>
+</body>
+</html>
