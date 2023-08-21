@@ -6,6 +6,7 @@
     <link rel="stylesheet" th:href="@{site.css}"/>
 </head>
 <body>
+<header th:replace="partials/navbar :: navbar"></header>
 <h1>Welcome to manager portal!</h1>
 <a th:href="@{employee/create}"><button>Create Employee</button></a>
 <p>list of all current employees</p>

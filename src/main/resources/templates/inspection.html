@@ -6,6 +6,7 @@
   <link rel="stylesheet" th:href="@{site.css}"/>
 </head>
 <body>
+<header th:replace="partials/navbar :: navbar"></header>
 <div class="card">
     <div class="row" th:text="${employee.firstName}"></div>
     <div class="row" th:text="${employee.lastName}"></div>
